@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o+qleKRvaczdE/rJCYTESLcXyPXtWM55htFoDeVx9DZA/8cY35JH7Hhh+LQ7h/553/2Y6kloNllLzUUUnhcW2Q==",
+  "dgSpecHash": "j0GBSRNzxF770ggdeEd+KPjZ47uiSNQHX65/7R1CYud/PMRzG/JZ5TLF1wlF60mqQ1V6gsuzr5t/ZDLuQB7PjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bruno\\Manager\\src\\Manager.API\\Manager.API.csproj",
+  "projectFilePath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.API\\Manager.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
