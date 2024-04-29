@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bruno\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj": {}
+    "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Domain\\Manager.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bruno\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj": {
+    "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Domain\\Manager.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bruno\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Domain\\Manager.Domain.csproj",
         "projectName": "Manager.Domain",
-        "projectPath": "C:\\Users\\bruno\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj",
+        "projectPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Domain\\Manager.Domain.csproj",
         "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bruno\\Manager\\src\\Manager.Domain\\obj\\",
+        "outputPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "fluentvalidation": {
+              "target": "Package",
+              "version": "[11.9.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
