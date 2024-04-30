@@ -1,0 +1,6 @@
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.csproj.AssemblyReference.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.AssemblyInfoInputs.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.AssemblyInfo.cs
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Domain\obj\Debug\net8.0\Manager.Domain.sourcelink.json
