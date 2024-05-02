@@ -1,9 +1,25 @@
-namespace Manager.Infra.Conytext;
 using Microsft.EntityFramerworkCore;
-public class ManagerContext : DBcontext :
+using Manager.Infra.Mappings;
+using Microsoft.EntityFrameworkCore;
+
+namespace Manager.Infra.Context;
+
+public class ManagerContext : DBcontext
 {
-    public ManagerContewxt()
+    public ManagerContext()
     {
         
     }
+	
+	public ManagerContext(DbContextOptions<ManagerContext> options) :base(options)
+	{
+
+	}
+
+	public virtual DbSet<User> Users{Get,Set;}
+	
+	protected override void OnModelCreating(ModelBuilder builder)
+	{
+		builder.ApplyConfiguration(new UserMap());
+	}
 }

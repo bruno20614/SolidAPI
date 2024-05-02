@@ -2,6 +2,7 @@ namespace Manager.Infra.Interfaces;
 using Manager.Domain.Entities
 using System.Threading.Tasks;
 using System.Collection.Generic;
+
 public interface IBaseReposiroy<T> where T : Base
 {
     Task<T> Create(T obj);

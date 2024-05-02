@@ -1,12 +1,20 @@
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Manager.Domain.Entities;
+using Manager.Infra.Interfaces;
+using Manager.Infra.Context;
+
 namespace Manager.Infra.Repositories;
 
 public class BaseRepository<T> : IBaseRepository<T> where T : Base
 {
-    private readnoly(ManagerContext _context)
-    {
-        _context=context
-    }
+    private readonly ManagerContext _context{ }
 
+    private BaseRepository(ManagerContext context)
+    {
+        _context = context;
+    }
     public virtual async Task<T> Create(T obj)
     {
         _context.Add(obj);
@@ -22,7 +30,7 @@ public class BaseRepository<T> : IBaseRepository<T> where T : Base
         return obj;
     }
     public virtual async Task Remove(long id)
-    {
+    {ikijk 
         var obj = await Get(id)
             
             if (obj ! null)
@@ -39,12 +47,12 @@ public class BaseRepository<T> : IBaseRepository<T> where T : Base
             .Where(x=>.Id ==id)
             .ToListAsync();
 
-        return obj.FistOrDefacult();
+        return obj.FistOrDefault();
     }
 
     public virtual async Task<List<T>> GetTask()
     {
-        return awair _context.Set<T>()
+        return await _context.Set<T>()
             .AsNoTracking()
             .ToListAsync();
     }
