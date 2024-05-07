@@ -16,6 +16,11 @@ public class ManagerContext : DBcontext
 
 	}
 
+	public override void OnConfiguration(DBContextOptionsBuilder optionsbuilder)
+	{
+		optionsbuilder.UserSqlServer("Server=PCBRUNO\SQLEXPRESS;Database=USERMANAGERAPI;Integrated Security=SSPI;TrustServerCertificate=True;trusted_connection=true")
+	}
+
 	public virtual DbSet<User> Users{Get,Set;}
 	
 	protected override void OnModelCreating(ModelBuilder builder)

@@ -1,5 +1,8 @@
-namespace Manager.Domain.Entities;
+using Manager.Domain.Validators;
 using System;
+using System.Collections.Generic;
+namespace Manager.Domain.Entities;
+
 public class User : Base
 {
     public string Name { get; private set; }
@@ -7,45 +10,47 @@ public class User : Base
     public string Password { get; private set; }
 
     //EF
-    protected user(){}
+     protected User(){ }
     public User(string name, string email, string password)
     {
         Name = name;
         Email = email;
         Password = password;
         _errors = new List<string>();
+
+		Validate();  
     }
 
     public void ChangName(string name)
     {
         Name = name;
-        Validade();
+        Validate();
     }
 
     public void ChangePassword(string password)
     {
         Password = password;
-        Validade();
+        Validate();
     }
 
     public void ChangeEmail(string email)
     {
         Email = email;
-        Validade();
+        Validate();
     }
 
-    public override bool Validade()
-    {
-        var validator = new UserValidador();
-        var validation = validator.Validate(this);
-
-        if (!validation.IsValid)
+    public override bool Validate()
         {
-            foreach (var error in valiador.Errors)
-                _errors.Add(error.ErrorMessage);
-            throw new Exception("Alguns campos estão inválidos,por favor corrija-os "+ _errors[0]);
-        }
+            var validator = new UserValidator(); // Corrigido o nome do validador
+            var validation = validator.Validate(this);
 
-        return true;
+            if (!validation.IsValid)
+            {
+                foreach (var error in validation.Errors)
+                    _errors.Add(error.ErrorMessage);
+                throw new Exception("Alguns campos estão inválidos, por favor corrija-os " + _errors[0]);
+            }
+
+            return true;
+        }
     }
-}
