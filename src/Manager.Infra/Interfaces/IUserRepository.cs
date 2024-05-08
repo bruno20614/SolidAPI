@@ -1,5 +1,6 @@
-namespace Manager.Infra.Interfaces;
+using Manager.Domain.Entities;
 
+namespace Manager.Infra.Interfaces;
 public interface IUserRepository : IBaseRepository<User>
 {
     Task<User> GetByEmail(string email);

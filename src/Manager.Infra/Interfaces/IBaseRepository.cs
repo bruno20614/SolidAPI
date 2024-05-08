@@ -1,13 +1,15 @@
-namespace Manager.Infra.Interfaces;
-using Manager.Domain.Entities
+using Manager.Domain.Entities;
 using System.Threading.Tasks;
-using System.Collection.Generic;
+using System.Collections.Generic;
 
-public interface IBaseReposiroy<T> where T : Base
+namespace Manager.Infra.Interfaces;
+
+
+public interface IBaseRepository<T> where T : Base
 {
-    Task<T> Create(T obj);
-    Task<T> Update(T obj);
-    Task<T> Remove(long id);
-    Task<T> Get(long id);
-    Task<List<T>> Get();
+    	Task<T> Create(T obj);
+        Task<T> Update(T obj);
+        Task Remove(long id);
+        Task<List<T>> Get();
+        Task<T> Get(long id);        
 }

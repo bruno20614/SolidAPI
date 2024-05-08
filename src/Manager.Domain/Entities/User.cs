@@ -1,6 +1,8 @@
 using Manager.Domain.Validators;
 using System;
 using System.Collections.Generic;
+using Manager.Core.Exceptions;
+
 namespace Manager.Domain.Entities;
 
 public class User : Base
@@ -41,14 +43,14 @@ public class User : Base
 
     public override bool Validate()
         {
-            var validator = new UserValidator(); // Corrigido o nome do validador
+            var validator = new UserValidator();
             var validation = validator.Validate(this);
 
             if (!validation.IsValid)
             {
                 foreach (var error in validation.Errors)
                     _errors.Add(error.ErrorMessage);
-                throw new Exception("Alguns campos estão inválidos, por favor corrija-os " + _errors[0]);
+                throw new DomainException("Alguns campos estão inválidos, por favor corrija-os " , _errors);
             }
 
             return true;

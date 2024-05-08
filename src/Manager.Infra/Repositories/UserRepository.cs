@@ -1,53 +1,44 @@
-namespace Manager.Infra.repositories;
+using Manager.Domain.Entities;
+using Manager.Infra.Context;
+using Manager.Infra.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
-public class UserRepository : BaseRepository<User>, IUserRepository
-{
-       private readonly ManagerContext _context;
-       public UserRepository(ManagerContext context) : base(context)
-       {
-              _context = context;
-       }
+namespace Manager.Infra.Repositories;
+    public class UserRepository : BaseRepository<User>, IUserRepository
+    {
+        private readonly ManagerContext _context;
+        public UserRepository(ManagerContext context) : base(context)
+        {
+            _context = context;
+        }
 
-       public async Task<User> GetByEmail(string email)
-       {
-              var user =await _context.Users
-                     .where
-              {
-                     _context=>
-                                   _context.Email.ToLower() ==email.ToLower()
-              }
-              .AsNoTracking();
-              .ToListAsync();
-              
-              return user.FirstOrDefault();
+        public async Task<User> GetByEmail(string email)
+        {
+            var user = await _context.Users
+                .Where(x => x.Email.ToLower() == email.ToLower())
+                .AsNoTracking()
+                .ToListAsync();
 
-       }
+            return user.FirstOrDefault();
+        }
 
-       public async Task<List<User>> SearchByEmail(string email)
-       {
-              var allUsers = await _context.Users
-                     .where
-              {
-                     x =>
-                            x.Email.ToLower().Contains(email.ToLower())
-              }
-              .AsNotTracking();
-                     .ToListAsync();
+        public async Task<List<User>> SearchByEmail(string email)
+        {
+            var allUsers = await _context.Users
+                .Where(x => x.Email.ToLower().Contains(email.ToLower()))
+                .AsNoTracking()
+                .ToListAsync();
 
-              return allUsers;
-       }
-       
-       public async Task<List<User>> SearchByName(string email)
-       {
-              var allUsers = await _context.Users
-                     .where
-              {
-                     x =>
-                            x.Name.ToLower().Contains(name.ToLower())
-              }
-              .AsNotTracking();
-                     .ToListAsync();
+            return allUsers;
+        }
 
-              return allUsers;
-       }
-}
+        public async Task<List<User>> SearchByName(string name)
+        {
+            var allUsers = await _context.Users
+                .Where(x => x.Name.ToLower().Contains(name.ToLower()))
+                .AsNoTracking()
+                .ToListAsync();
+
+            return allUsers;
+        }
+    }
