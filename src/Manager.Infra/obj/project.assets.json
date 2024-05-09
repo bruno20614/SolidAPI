@@ -1516,10 +1516,21 @@
           }
         }
       },
+      "Manager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Manager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Manager.Core.dll": {}
+        }
+      },
       "Manager.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Manager.Core": "1.0.0",
           "fluentvalidation": "11.9.1"
         },
         "compile": {
@@ -4147,6 +4158,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Manager.Core/1.0.0": {
+      "type": "project",
+      "path": "../Manager.Core/Manager.Core.csproj",
+      "msbuildProject": "../Manager.Core/Manager.Core.csproj"
     },
     "Manager.Domain/1.0.0": {
       "type": "project",
