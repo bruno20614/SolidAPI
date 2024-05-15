@@ -6,6 +6,7 @@ using Manager.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Manager.Services.Interfaces;
 using AutoMapper;
+using Manager.Services.DTO;
 
 namespace Manager.API.Controllers;
 
@@ -30,7 +31,17 @@ public class UserController : ControllerBase
     {
         try
         {
-            return Ok();
+            var userDTO = _mapper.Map<UserDTO>(userViewModel);
+
+            var userCreated = await _userService.Create(userDTO);
+
+            return Ok(new ResultViewModels
+            {
+                Message = "Usuário criado com sucesso",
+                Success = true,
+                Data = userCreated
+            });
+
         }
         catch(DomainException ex)
         {

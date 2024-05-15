@@ -13,7 +13,8 @@
           "Manager.Infra": "1.0.0",
           "Manager.Services": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.4",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "AutoMapper": "13.0.1"
         },
         "runtime": {
           "Manager.API.dll": {}
