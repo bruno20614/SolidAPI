@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dTsZjiSpQdefgfUv0OYLTofj0I67B/VKU59JvZ/mqU56VuU/2tDYhTqSeN9JPfRjfTCPAuRXhAiheRrf0DXErQ==",
+  "dgSpecHash": "o3jNOEZ1xW0GL2/LPyskbRbTOXMUJ79H+GHq93in5vaZ6SxIaaCaKnL0Fy5Lg0Nc9z8ZY2kWA28otuYw2g4pAQ==",
   "success": true,
-  "projectFilePath": "/home/usuario/Solid/SolidAPI/src/Manager.Core/Manager.Core.csproj",
+  "projectFilePath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/Manager.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

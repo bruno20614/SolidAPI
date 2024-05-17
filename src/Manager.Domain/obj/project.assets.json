@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/usuario/Solid/SolidAPI/src/Manager.Domain/Manager.Domain.csproj",
+      "projectUniqueName": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Domain/Manager.Domain.csproj",
       "projectName": "Manager.Domain",
-      "projectPath": "/home/usuario/Solid/SolidAPI/src/Manager.Domain/Manager.Domain.csproj",
+      "projectPath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Domain/Manager.Domain.csproj",
       "packagesPath": "/home/usuario/.nuget/packages/",
-      "outputPath": "/home/usuario/Solid/SolidAPI/src/Manager.Domain/obj/",
+      "outputPath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/usuario/.nuget/NuGet/NuGet.Config"
@@ -90,8 +90,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/usuario/Solid/SolidAPI/src/Manager.Core/Manager.Core.csproj": {
-              "projectPath": "/home/usuario/Solid/SolidAPI/src/Manager.Core/Manager.Core.csproj"
+            "/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/Manager.Core.csproj": {
+              "projectPath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/Manager.Core.csproj"
             }
           }
         }

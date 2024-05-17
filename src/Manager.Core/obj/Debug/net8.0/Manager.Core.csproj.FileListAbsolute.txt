@@ -22,3 +22,15 @@ C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Core/obj
 /home/usuario/Solid/SolidAPI/src/Manager.Core/obj/Debug/net8.0/refint/Manager.Core.dll
 /home/usuario/Solid/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.pdb
 /home/usuario/Solid/SolidAPI/src/Manager.Core/obj/Debug/net8.0/ref/Manager.Core.dll
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/bin/Debug/net8.0/Manager.Core.deps.json
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/bin/Debug/net8.0/Manager.Core.dll
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/bin/Debug/net8.0/Manager.Core.pdb
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.AssemblyInfoInputs.cache
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.AssemblyInfo.cs
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.csproj.CoreCompileInputs.cache
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.sourcelink.json
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.dll
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/refint/Manager.Core.dll
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/Manager.Core.pdb
+/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/Debug/net8.0/ref/Manager.Core.dll

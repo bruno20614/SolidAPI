@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ukltm14ooUVU74kh7uQCWgY+9u5uDX73/s77xm6q13u6n0whbkbMkEkVvB+lK1eRSnmxmybSmlWTidLT7HQe4Q==",
+  "dgSpecHash": "0uX3EZAMHt7jaw6j/5qGN5Rme7J+a09UCLactye20Cyg82WHS6A8w+a4yB28i4QdHrdaUftS4s5OtF1x92JQGg==",
   "success": true,
-  "projectFilePath": "/home/usuario/Solid/SolidAPI/src/Manager.Infra/Manager.Infra.csproj",
+  "projectFilePath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Infra/Manager.Infra.csproj",
   "expectedPackageFiles": [
     "/home/usuario/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/usuario/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

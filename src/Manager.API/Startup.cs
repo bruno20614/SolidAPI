@@ -13,13 +13,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using System;
 
-namespace Manager.API;
+namespace Manager.API
+{
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -31,9 +28,13 @@ namespace Manager.API;
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // Configuração dos serviços que seu aplicativo usará.
             services.AddControllers();
-            // Adicione outros serviços aqui, como serviços de banco de dados, autenticação, etc.
+
+            // Configuração do Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Manager.API", Version = "v1" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -57,6 +58,16 @@ namespace Manager.API;
 
             app.UseAuthorization();
 
+            // Ativa o middleware para servir o Swagger gerado como um endpoint JSON
+            app.UseSwagger();
+
+            // Ativa o middleware para servir o UI do Swagger no navegador
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Manager.API V1");
+                c.RoutePrefix = string.Empty; // define o Swagger UI na raiz (opcional)
+            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -64,3 +75,4 @@ namespace Manager.API;
             });
         }
     }
+}
