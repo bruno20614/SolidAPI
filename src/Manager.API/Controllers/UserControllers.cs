@@ -5,6 +5,9 @@ using Manager.API.ViewModels;
 using Manager.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Manager.Services.Interfaces;
+using Manager.Core.Exceptions;
+using System.Collections.Generic;
+using Manager.API.Utilities;
 using AutoMapper;
 using Manager.Services.DTO;
 
@@ -43,13 +46,14 @@ public class UserController : ControllerBase
             });
 
         }
-        catch(DomainException ex)
-        {
-           return BadRequest();
-        }
+        //catch(DomainException ex)
+        //{
+          //  return BadRequest(Response.DomainErrorMessage(ex.Message, ex.Errors));
+        //}
+
         catch(Exception)
         {
-            return StatusCode(500, "Erro");
+            return StatusCode(500,Response);
         }
     }
 }
