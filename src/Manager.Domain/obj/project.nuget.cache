@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "G7UB566Ln5VVq7FeawTkhqp2Av3gx3EORUzUSrZvitWm91SG8NqlzQLQ2E34ycbMNwj59LeFzL5sif8ue4a7xA==",
+  "dgSpecHash": "VCJNYcHrgwJmDDDDdzLlNBk5r8lqrs+iqxIMjh8UzTKv00qqT465Vl++SCUkIOG1mjKY3qkI6+LjO57AG4V1fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Domain\\Manager.Domain.csproj",
+  "projectFilePath": "/home/usuario/Solid/SolidAPI/src/Manager.Domain/Manager.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bruno\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512"
+    "/home/usuario/.nuget/packages/fluentvalidation/11.9.1/fluentvalidation.11.9.1.nupkg.sha512"
   ],
   "logs": []
 }

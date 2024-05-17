@@ -46,10 +46,10 @@ public class UserController : ControllerBase
             });
 
         }
-        //catch(DomainException ex)
-        //{
-          //  return BadRequest(Response.DomainErrorMessage(ex.Message, ex.Errors));
-        //}
+        catch(DomainException ex)
+        {
+            return BadRequest(Response.DomainErrorMessage(ex.Message, ex.Errors));
+        }
 
         catch(Exception)
         {

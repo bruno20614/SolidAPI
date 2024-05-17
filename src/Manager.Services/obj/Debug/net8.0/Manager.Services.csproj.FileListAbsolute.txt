@@ -1,20 +1,40 @@
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Services.deps.json
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Services.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Services.pdb
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.AssemblyInfoInputs.cache
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.AssemblyInfo.cs
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.csproj.CoreCompileInputs.cache
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.sourcelink.json
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\refint\Manager.Services.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.pdb
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\ref\Manager.Services.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager.Services.csproj.AssemblyReference.cache
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Core.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Domain.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Infra.dll
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Domain.pdb
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Core.pdb
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\bin\Debug\net8.0\Manager.Infra.pdb
-C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.Services\obj\Debug\net8.0\Manager..B6631CFB.Up2Date
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Services.deps.json
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Services.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Services.pdb
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.AssemblyInfoInputs.cache
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.AssemblyInfo.cs
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.csproj.CoreCompileInputs.cache
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.sourcelink.json
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/refint/Manager.Services.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.pdb
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/ref/Manager.Services.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.csproj.AssemblyReference.cache
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Core.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Domain.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Infra.dll
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Domain.pdb
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Core.pdb
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Infra.pdb
+C:/Users/bruno/OneDrive/Área de Trabalho/SolidAPI/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager..B6631CFB.Up2Date
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Services.deps.json
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Services.dll
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Services.pdb
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Core.dll
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Domain.dll
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Infra.dll
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Domain.pdb
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Core.pdb
+/home/usuario/Solid/SolidAPI/src/Manager.Services/bin/Debug/net8.0/Manager.Infra.pdb
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.csproj.AssemblyReference.cache
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.GeneratedMSBuildEditorConfig.editorconfig
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.AssemblyInfoInputs.cache
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.AssemblyInfo.cs
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.csproj.CoreCompileInputs.cache
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.sourcelink.json
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager..B6631CFB.Up2Date
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.dll
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/refint/Manager.Services.dll
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/Manager.Services.pdb
+/home/usuario/Solid/SolidAPI/src/Manager.Services/obj/Debug/net8.0/ref/Manager.Services.dll
