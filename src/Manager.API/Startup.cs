@@ -13,10 +13,18 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
+using AutoMapper;
+using Manager.Domain.Entities;
+using Manager.API.ViewModels;
 
-namespace Manager.API
-{
+namespace Manager.API;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -29,7 +37,20 @@ namespace Manager.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+			
+			#region AutoMapper
+			var autoMapperConfig = new MapperConfiguration(cfg =>
+			{
+				cfg.CreateMap<User,UserDTO>().ReverseMap();
+				cfg.CreateMap<CreateUserViewModel,UserDTO>().ReverseMap();
+			});
 
+            services.AddSingleton(d => Configuation);
+            services.AddDbConetxt<ManagerContext>(options =>.UserSqlServer(Configuration["ConnectionString:USER_MANAGER"]),ServiceLifetime.Transient);
+			services.AddScoped<IUserRepository,UserRepository>();
+            services.AddScoped<IUserService,UserService>();
+			#endregion	
+            
             // Configuração do Swagger
             services.AddSwaggerGen(c =>
             {
@@ -75,4 +96,3 @@ namespace Manager.API
             });
         }
     }
-}
