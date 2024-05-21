@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/usuario/.nuget/packages/": {}
+    "C:\\Users\\bruno\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/Manager.Core.csproj",
+      "projectUniqueName": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Core\\Manager.Core.csproj",
       "projectName": "Manager.Core",
-      "projectPath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/Manager.Core.csproj",
-      "packagesPath": "/home/usuario/.nuget/packages/",
-      "outputPath": "/home/usuario/APIrobusta/SolidAPI/src/Manager.Core/obj/",
+      "projectPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Core\\Manager.Core.csproj",
+      "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\SolidAPI\\SolidAPI\\src\\Manager.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/usuario/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
