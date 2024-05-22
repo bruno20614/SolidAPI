@@ -39,14 +39,20 @@ namespace Manager.API;
             services.AddControllers();
 			
 			#region AutoMapper
-			var autoMapperConfig = new MapperConfiguration(cfg =>
-			{
-				cfg.CreateMap<User,UserDTO>().ReverseMap();
-				cfg.CreateMap<CreateUserViewModel,UserDTO>().ReverseMap();
-			});
+            var autoMapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<User, UserDTO>().ReverseMap();
+                cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
+            });
 
-            services.AddSingleton(d => Configuation);
-            services.AddDbConetxt<ManagerContext>(options =>.UserSqlServer(Configuration["ConnectionString:USER_MANAGER"]),ServiceLifetime.Transient);
+            IMapper mapper = autoMapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
+            services.AddSingleton(Configuration);
+
+            services.AddDbContext<ManagerContext>(options =>
+                options.UseSqlServer(Configuration["ConnectionString:USER_MANAGER"]), ServiceLifetime.Transient);
+
 			services.AddScoped<IUserRepository,UserRepository>();
             services.AddScoped<IUserService,UserService>();
 			#endregion	

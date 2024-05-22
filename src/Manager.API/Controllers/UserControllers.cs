@@ -28,6 +28,7 @@ public class UserController : ControllerBase
     }
     
     [HttpPost]
+    //[Authorize]
     [Route("/api/v1/users/create")]
 
     public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
@@ -46,14 +47,38 @@ public class UserController : ControllerBase
             });
 
         }
-        //catch(DomainException ex)
-        //{
-        // return BadRequest(Response.DomainErrorMessage(ex.Message, ex.Errors));
-        //}
+        catch(DomainException ex)
+        {
+         return BadRequest(Response.DomainErrorMessage(ex.Message, ex.Errors));
+        }
 
         catch(Exception)
         {
-            return StatusCode(500,Response);
+            return StatusCode(500,Response.ApplicationErrorMessage);
         }
     }
+
+    [HttpPut]
+    //[Authorize]
+    [Route("aí/v1/user/update")]
+    public async Task<IActionResult> Update([FromBody] UserDTO userDTO)
+    {
+        try
+        {
+            var userUpdated = await _userService.Update(userDTO)
+            return Ok(new ResultViewModels
+            {
+                Message = "Usuário atualizado com sucesso",
+                Success = true,
+                Data = userUpdated
+            });
+        }
+        catch (DomainException ex)
+        {
+            return BadRequest(Response.DomainErrorMessage(ex.Message, ex.Errors));
+        }
+        catch (Exception)
+        {
+            return StatusCode(500,Response.ApplicationErrorMessage);
+        }
 }
