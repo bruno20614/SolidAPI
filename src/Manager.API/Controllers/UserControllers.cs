@@ -12,6 +12,7 @@ using AutoMapper;
 
 using Manager.Services.DTO;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Manager.API.Controllers;
 
@@ -210,6 +211,32 @@ public class UserController : ControllerBase
         catch
         {
             return StatusCode(500, Utilities.Response.ApplicationErrorMessage());   
+        }
+    }
+
+    [HttpGet]
+    //[Authorize]
+    [Route("/api/v1/users/get-all")]
+    public async Task<IActionResult> Get()
+    {
+        try
+        {
+            var allusers = await _userService.Get();
+
+            return Ok(new ResultViewModels
+            {
+                Message = "Usuários encotrados com sucesso",
+                Success = true,
+                Data = allusers
+            });
+        }
+        catch (DomainException ex)
+        {
+            return BadRequest(Utilities.Response.DomainErrorMessage(ex.Message));
+        }
+        catch (Exception)
+        {
+            return StatusCode(500, Utilities.Response.ApplicationErrorMessage()); 
         }
     }
 }
