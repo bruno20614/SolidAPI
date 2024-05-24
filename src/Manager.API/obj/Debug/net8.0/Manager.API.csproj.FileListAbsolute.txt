@@ -99,6 +99,8 @@ C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\
 C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\SolidAPI\SolidAPI\src\Manager.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll

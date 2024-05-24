@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Manager.Services.Interfaces;
 using Manager.Core.Exceptions;
 using System.Collections.Generic;
+using System.Dynamic;
 using Manager.API.Utilities;
 using AutoMapper;
 
@@ -31,7 +32,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-    //[Authorize]
+    [Authorize]
     [Route("/api/v1/users/create")]
 
     public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
@@ -62,7 +63,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPut]
-    //[Authorize]
+    [Authorize]
     [Route("aí/v1/user/update")]
     public async Task<IActionResult> Update([FromBody] UpdateUserViewModel userViewModel)
     {
@@ -89,7 +90,7 @@ public class UserController : ControllerBase
     }
 
     [HttpDelete]
-    //Authorize
+    [Authorize]
     [Route("api/v1/user/remove/{id}")]
     public async Task<IActionResult> Remove(long id)
     {
@@ -114,7 +115,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    //[Authorize]
+    [Authorize]
     [Route("api/v1/user/get/{id}")]
 
     public async Task<IActionResult> Get(long id)
@@ -148,7 +149,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    //[Authorize]
+    [Authorize]
     [Route("api/v1/user/search-by-name")]
         public async Task<IActionResult> SearchByName([FromQuery] string name)
         {
@@ -181,7 +182,7 @@ public class UserController : ControllerBase
         }
 
     [HttpGet]
-    //[Authorize]
+    [Authorize]
     [Route("api/v1/users/search-by-email")]
 
     public async Task<IActionResult> SearchByEmail([FromQuery] string email)
@@ -215,7 +216,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    //[Authorize]
+    [Authorize]
     [Route("/api/v1/users/get-all")]
     public async Task<IActionResult> Get()
     {
@@ -228,6 +229,41 @@ public class UserController : ControllerBase
                 Message = "Usuários encotrados com sucesso",
                 Success = true,
                 Data = allusers
+            });
+        }
+        catch (DomainException ex)
+        {
+            return BadRequest(Utilities.Response.DomainErrorMessage(ex.Message));
+        }
+        catch (Exception)
+        {
+            return StatusCode(500, Utilities.Response.ApplicationErrorMessage()); 
+        }
+    }
+    [HttpGet]
+    [Authorize]
+    [Route("/api/v1/users/get-by-email")]
+    public async Task<IActionResult> GetByEmail([FromQuery] string email)
+    {
+        try
+        {
+            var user = await _userService.GetByEmail(email);
+
+            if (user == null)
+            {
+                return Ok(new ResultViewModels
+                {
+                    Message = "Nenhum usuário foi encontrado com o email informado.",
+                    Success = true,
+                    Data = null
+                });
+            }
+
+            return Ok(new ResultViewModels
+            {
+                Message = "Usuário encontrado com sucesso!",
+                Success = true,
+                Data = user
             });
         }
         catch (DomainException ex)

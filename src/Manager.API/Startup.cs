@@ -19,9 +19,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Text;
 using AutoMapper;
+using Manager.API.Token;
 using Manager.Domain.Entities;
 using Manager.API.ViewModels;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Manager.API.Token;
 
 namespace Manager.API;
 
@@ -57,8 +61,32 @@ namespace Manager.API;
 
 			services.AddScoped<IUserRepository,UserRepository>();
             services.AddScoped<IUserService,UserService>();
-			#endregion	
-            
+            services.AddScoped<ITokenGenerator, TokenGenerator>();
+			#endregion
+
+            #region Jwt
+
+            var secretKey = Configuration["Jwt:Key"];
+            services.AddAuthentication(x =>
+                {
+                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(x =>
+                {
+                    x.RequireHttpsMetadata = false;
+                    x.SaveToken = true;
+                    x.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
+
+
+            #endregion
             // Configuração do Swagger
             services.AddSwaggerGen(c =>
             {
@@ -85,6 +113,8 @@ namespace Manager.API;
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            
             app.UseAuthorization();
 
             // Ativa o middleware para servir o Swagger gerado como um endpoint JSON
