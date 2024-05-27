@@ -98,7 +98,7 @@ namespace Manager.API;
                     Title = "Manager API",
                     Version = "V1",
                     Description = "A construção de uma API",
-                    Url = new Uri("https://localhost5028.com.br")
+                    TermsOfService  = new Uri("https://localhost5028.com.br")
                 });
 
                 // Adicionando a definição de segurança
