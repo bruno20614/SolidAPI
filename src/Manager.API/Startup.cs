@@ -26,6 +26,7 @@ using Manager.Domain.Entities;
 using Manager.API.ViewModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Manager.API.Token;
+using Microsoft.OpenApi.Models;
 
 namespace Manager.API;
 
@@ -87,11 +88,51 @@ namespace Manager.API;
 
 
             #endregion
-            // Configuração do Swagger
+
+            #region Swagger
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Manager.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Manager API",
+                    Version = "V1",
+                    Description = "A construção de uma API",
+                    Url = new Uri("https://localhost5028.com.br")
+                });
+
+                // Adicionando a definição de segurança
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Por favor, utilize o Bearer <Token>",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+
+                // Adicionando o requisito de segurança
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Scheme = "oauth2",
+                            Name = "Bearer",
+                            In = ParameterLocation.Header
+                        },
+                        new string []{ }
+                    }
+                });
             });
+
+            #endregion
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
